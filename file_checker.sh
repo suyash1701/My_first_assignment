@@ -1,12 +1,11 @@
 #!/bin/bash
 
 # Path to the file
-FILE ="path/to/your/file"
+FILE=FILE="/home/yourusername/test.txt"
 
-# check if file exists
-
-if [ -f "FILE" ]; then
-	echo "file $FILE Exists. "
+# Check file exists
+if [ -f "$FILE" ]; then
+    echo "File $FILE exists."
 else
-	echo "file $FILE does not Exists. "
+    echo "File $FILE does not exist."
 fi
